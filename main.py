@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from datetime import datetime
 from typing import List, Dict
 
-app = FastAPI(title="Sportmonks Mock API - World Cup Final 2022")
+app = FastAPI(title="Mock Football API - World Cup Final 2022")
 
 # Guarda o momento em que o servidor iniciou (ou foi resetado)
 server_start_time = datetime.now()
@@ -43,7 +43,6 @@ async def get_livescores():
         status = "FINISHED"
         current_minute = 120 # Trava no final do jogo
 
-    # Retorna uma estrutura simplificada inspirada na Sportmonks
     return {
         "data": [
             {
