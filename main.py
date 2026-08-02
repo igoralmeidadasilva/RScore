@@ -25,7 +25,7 @@ def get_current_match_minute() -> int:
     delta = datetime.now() - server_start_time
     return int(delta.total_seconds())
 
-@app.get("/v3/football/livescores")
+@app.get("/v1/football/ao-vivo/")
 async def get_livescores():
     current_minute = get_current_match_minute()
     
