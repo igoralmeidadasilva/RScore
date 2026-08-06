@@ -3,7 +3,7 @@ services:
     build: .
     container_name: rscore_data_provider_mock
     ports:
-      - "8001:8000"
+      - "8000:8000"
     restart: unless-stopped
     networks:
       - rscore-mock-network
