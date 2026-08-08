@@ -6,9 +6,8 @@ services:
       - "8000:8000"
     restart: unless-stopped
     networks:
-      - rscore-mock-network
+      - rscore-network
 
 networks:
-  rscore-mock-network:
-    name: rscore-mock-network
+  rscore-network:
     driver: bridge
