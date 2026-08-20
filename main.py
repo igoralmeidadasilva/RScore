@@ -11,6 +11,8 @@ MATCHES = [
         "id": 1,
         "name": "France vs Morocco",
         "venue": "Boston Stadium",
+        "home_team_id": "UnKuALJP",
+        "visitor_team_id": "Sq8Hp9q_",
         "final_minute": 97,  # 90+7
         "events": [
             # Início/fim da partida
@@ -72,6 +74,8 @@ MATCHES = [
         "id": 2,
         "name": "Spain vs Belgium",
         "venue": "Los Angeles Stadium",
+        "home_team_id": "yWnDCWzP",
+        "visitor_team_id": "98X_hVWX",
         "final_minute": 98,  # 90+8
         "events": [
             # Início
@@ -136,6 +140,8 @@ MATCHES = [
         "id": 3,
         "name": "England vs Norway",
         "venue": "Miami Stadium",
+        "home_team_id": "L6DhaTVa",
+        "visitor_team_id": "nw8dEUHZ",
         "final_minute": 121,  # 120+1
         "events": [
             # Início
@@ -221,6 +227,8 @@ MATCHES = [
         "id": 4,
         "name": "Argentina vs Switzerland",
         "venue": "Kansas City Stadium",
+        "home_team_id": "vawvWliJ",
+        "visitor_team_id": "tIvfk5UO",
         "final_minute": 121,  # 120+1
         "events": [
             # Início
@@ -341,6 +349,8 @@ def build_match_payload(match: Dict) -> Dict:
         "match_id": 1845000 + match["id"],
         "name": match["name"],
         "venue": match["venue"],
+        "local_team_id": match["home_team_id"],
+        "visitor_team_id": match["visitor_team_id"],
         "starting_at": server_start_time.isoformat(),
         "time": {
             "minute": current_minute,
